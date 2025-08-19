@@ -6,7 +6,6 @@
   --orange-color: #f3701e;
   --dark-color:#2b2b2b;
 }
-
 .frame{
   display: flex;
   position: relative;
@@ -28,6 +27,12 @@
   flex-direction: column;
   overflow: hidden;
 }
+@media (min-width:400px) {
+  .card{
+    max-width: 360px;
+    max-height: 700px;
+  }
+}
 .display{
   display: flex;
   position: relative;
@@ -41,6 +46,12 @@
   overflow: hidden;
   top: 2px;
 }
+@media (min-width:400px) {
+  .display{
+    max-width: 330px;
+    max-height: 14%;
+  }
+}
 .displayText{
   display: flex;
   position: relative;
@@ -52,6 +63,12 @@
   font-family: "Poppins";
   font-weight: 700;
   font-size: 25px;
+}
+@media (min-width:400px) {
+  .displayText{
+    max-width: 360px;
+    max-height: 14%;
+  }
 }
 .buttonsPanel{
   display: flex;
@@ -87,6 +104,12 @@
   font-weight: 500;
   font-size: 35px;
   cursor: pointer;
+}
+@media (min-width:400px) {
+  .button{
+    max-width: 18%;
+    max-height: 80%;
+  }
 }
 .equals{
   background: var(--orange-color);
